@@ -56,12 +56,13 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#c9e8ff"
+                android:onClick="onClickIns0"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
-                android:text="2048"
                 android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -75,8 +76,8 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
-                android:text="2048"
                 android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -90,8 +91,8 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
-                android:text="2048"
                 android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -105,8 +106,8 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
-                android:text="2048"
                 android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -120,8 +121,8 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
-                android:text="2048"
                 android:textColor="@android:color/background_dark"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -141,9 +142,9 @@
                 android:paddingBottom="20dp"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="4"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="onClickSel0"/>
 
             <TextView
                 android:id="@+id/show1"
@@ -155,9 +156,9 @@
                 android:paddingBottom="20dp"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="4"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="onClickSel1"/>
 
             <TextView
                 android:id="@+id/show2"
@@ -169,9 +170,9 @@
                 android:paddingBottom="20dp"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="4"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="onClickSel2"/>
 
         </LinearLayout>
 
