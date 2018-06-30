@@ -56,14 +56,14 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#c9e8ff"
-                android:onClick="onClickIns0"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="onClickIns0"/>
 
             <TextView
                 android:id="@+id/one"
@@ -72,6 +72,7 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#fff7c9"
+                android:onClick="onClickIns1"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -87,6 +88,7 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#caf7db"
+                android:onClick="onClickIns2"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -102,6 +104,7 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#e2caf7"
+                android:onClick="onClickIns3"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -117,6 +120,7 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#f2cbd9"
+                android:onClick="onClickIns4"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
