@@ -56,14 +56,14 @@
                 android:layout_margin="3dp"
                 android:layout_weight="1"
                 android:background="#c9e8ff"
+                android:onClick="onClickIns0"
                 android:paddingBottom="40dp"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:onClick="onClickIns0"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/one"
@@ -78,7 +78,7 @@
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -94,7 +94,7 @@
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -126,7 +126,7 @@
                 android:paddingRight="5dp"
                 android:paddingTop="40dp"
                 android:textColor="@android:color/background_dark"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -188,9 +188,24 @@
             <TextView
                 android:id="@+id/msg"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="50dp"
                 android:text="*Selection blocks" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="439dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright 2018, Vishal Anand" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.Console;
+import java.sql.Time;
 import java.util.Random;
 
 public class PlayActivity extends AppCompatActivity {
@@ -127,7 +128,7 @@ public class PlayActivity extends AppCompatActivity {
             public void run() {
                 insArr[i].setBackgroundColor(Color.parseColor(color));
             }
-        },300);
+        },800);
     }
 
     public void updateInsBlocks(){
@@ -147,7 +148,7 @@ public class PlayActivity extends AppCompatActivity {
                 insertion[i+1] = 0;
                 insArr[i].setText(Integer.toString(insertion[i]));
                 insArr[i+1].setText("");
-                break;
+                i = -1;
             }
         }
         return;
@@ -207,13 +208,8 @@ public class PlayActivity extends AppCompatActivity {
             insArr[i].setText(Integer.toString(insertion[i]));
             changed = true;
         }
-        else if(insertion[i] == selection[active]){
-            insertion[i] *= 2;
-            insArr[i].setText(Integer.toString(insertion[i]));
-            changed = true;
-        }
         else{
-            Toast.makeText(getApplicationContext(),"Numbers do not match!",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Block already filled!",Toast.LENGTH_SHORT).show();
         }
         if(changed == true){
             updateInsBlocks();

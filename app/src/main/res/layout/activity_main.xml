@@ -33,6 +33,16 @@
             android:background="#ff477e"
             android:padding="20dp"
             android:text="Rules"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:onClick="onClickRules"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Copyright 2018, Vishal Anand" />
+
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
