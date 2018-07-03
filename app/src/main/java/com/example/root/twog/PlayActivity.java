@@ -3,6 +3,7 @@ package com.example.root.twog;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -224,7 +225,13 @@ public class PlayActivity extends AppCompatActivity {
             changeColorsSel(idx,color);
         }
         if(gameOver()){
-            Toast.makeText(getApplicationContext(),"GAME OVER",Toast.LENGTH_LONG).show();
+//            Toast.makeText(getApplicationContext(),"GAME OVER",Toast.LENGTH_LONG).show();
+            AlertDialog.Builder dia_rules = new AlertDialog.Builder(this);
+            String rules = "Bingo! You just scored" + Integer.toString(score);
+            dia_rules.setMessage(rules);
+            dia_rules.setTitle("Your Score");
+            dia_rules.setCancelable(true);
+            dia_rules.create().show();
         }
         return;
     }
